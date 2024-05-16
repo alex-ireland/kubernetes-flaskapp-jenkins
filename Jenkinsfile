@@ -4,8 +4,7 @@ pipeline {
     stage('Build') {
       steps {
         sh ""
-        docker build -t xanderire/duo-deploy-flask:latest -t 
-        xanderire/duo-deploy-flask:v$BUILD_NUMBER .
+        docker build -t xanderire/duo-deploy-flask:latest -t xanderire/duo-deploy-flask:v$BUILD_NUMBER .
         ""
       }
     }
